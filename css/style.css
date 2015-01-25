@@ -1,0 +1,815 @@
+
+/*Template Name: PinCode - Responsive Premium Landing Page Template
+Theme URL: http://themeforest.net/user/DSA79/
+Description: PinCode - Responsive Premium Landing Page Template
+Author: DSA79
+Author URL: http://themeforest.net/user/DSA79
+Version: 1.0.0
+Website: www.dsathemes.com
+Tags: responsive, html5 template, one page, landing page, mobile, application, business, corporate, project
+*/
+
+
+
+/* ------------------------------------------ */
+/*             TABLE OF CONTENTS
+/* ------------------------------------------ */
+
+/*   01 - General & Basic Styles   */
+/*   02 - Header & Navigation      */
+/*   03 - Intro      			   */
+/*   04 - Features                 */
+/*   11 - Newsletter	 	  	   */
+/*   12 - Call to Action 	  	   */
+/*   13 - Footer		 	  	   */
+/*   14 - Scroll to Top	 	  	   */
+
+
+
+/* ==========================================================================
+   01. GENERAL & BASIC STYLES
+   ========================================================================== */ 
+
+.black-color {
+	color: #333;
+}
+
+/*------------------------------------------*/
+/*	 Page Preload
+/*------------------------------------------*/
+
+#preOverlay {
+	background-color: #eb5840;
+}
+
+#jpreLoader {
+	width: 300px;
+	height: 100px;
+	position: relative;
+	z-index: 1;
+	margin: 0 auto;
+}
+#jpreBar {
+	position: fixed;
+	width: 100%;
+	height: 100% !important;
+	top: 0;
+	left: 0;
+}
+
+#jprePercentage {
+	color: #fff;
+	font-family: 'Lato', sans-serif;
+	font-size: 70px;
+	font-weight: 300;
+	text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+	text-align:center;	
+	letter-spacing:-2px;
+	z-index:2;
+	margin: 0;
+}
+
+/*------------------------------------------*/
+/*	 Headers
+/*------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0; 
+	margin-bottom: 10px;
+}
+
+/*------------------------------------------*/
+/*	 Link Setting
+/*------------------------------------------*/
+
+a {
+	text-decoration: none;
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	-ms-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+}
+
+a:hover {
+	color: #444;
+	text-decoration: none;
+}
+
+a:focus {
+	color: #f8f8f8;
+	outline: none;
+	text-decoration: none;
+} 
+
+/*------------------------------------------*/
+/*	 Lists
+/*------------------------------------------*/
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/*------------------------------------------*/
+/*	 Theme Button
+/*------------------------------------------*/
+
+.btn-theme {
+	background-color: transparent;
+	border: 1px solid #eee;
+	color: #fff;
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	padding: 10px 20px;
+	-webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+	-webkit-transition: all 200ms ease-in-out;
+	-moz-transition: all 200ms ease-in-out;
+	-o-transition: all 200ms ease-in-out;
+	-ms-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
+}
+
+.btn-theme:hover {
+	background-color: #333;
+	border-color: #333;
+	box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2) inset, 0px 1px 2px rgba(0, 0, 0, 0.2);
+	color: #f8f8f8; 
+}
+
+/*------------------------------------------*/
+/*	 Black Button
+/*------------------------------------------*/
+
+.btn-black {
+	background-color: #222;
+	border: 1px solid #222;
+	color: #fff;
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	padding: 10px 20px;
+	-webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+	box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2) inset, 0px 1px 2px rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 200ms ease-in-out;
+	-moz-transition: all 200ms ease-in-out;
+	-o-transition: all 200ms ease-in-out;
+	-ms-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
+}
+
+.btn-black:hover {
+	background-color: #333;
+	border-color: #333;
+	box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2) inset, 0px 1px 2px rgba(0, 0, 0, 0.2);
+	color: #f8f8f8; 
+}
+
+/*------------------------------------------*/
+/*	 Button Hover/Focus
+/*------------------------------------------*/
+
+.btn:focus {
+	outline: none;
+}
+
+.btn:focus {
+	color: #f8f8f8;
+	text-decoration: none;
+}
+
+
+/*------------------------------------------*/
+/*	 Section Titlebar
+/*------------------------------------------*/
+
+.titlebar {
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.titlebar h1 {
+	color: #000;
+	font-size: 40px;
+	font-weight: 400;
+}
+
+.titlebar p {
+	color: #444;
+	font-size: 20px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	padding: 0 20%;
+}
+
+
+
+/* ==========================================================================
+   02. HEADER & NAVIGATION
+   ========================================================================== */
+
+/*------------------------------------------*/
+/*	 Logo Image    
+/*------------------------------------------*/
+
+.navbar-brand {
+	color: #fff;
+	font-size: 28px;
+	font-family: 'Lato', sans-serif;	
+	font-weight: 900;
+	line-height: 60px;
+	padding: 0 15px;
+}  
+
+.navbar-brand:hover {
+	color: #fff;
+} 
+      
+/*------------------------------------------*/
+/*	 Navigation Menu    
+/*------------------------------------------*/
+
+.navbar {	
+	margin-bottom: 0;
+	-webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+	padding: 40px 0px;
+	-webkit-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out;
+}
+
+.navbar-fixed-top { 
+	border-bottom: none;
+}
+
+.navbar-nav > li > a {
+	color: #333;
+	font-family: 'Lato', sans-serif;
+	line-height: 60px;
+	font-weight: 900;
+	text-transform: uppercase;
+	display: block;
+	padding: 0 15px;
+	-webkit-transition: all 100ms ease-in-out;
+	-moz-transition: all 100ms ease-in-out;
+	-o-transition: all 100ms ease-in-out;
+	-ms-transition: all 100ms ease-in-out;
+	transition: all 100ms ease-in-out;
+}
+
+/*------------------------------------------*/
+/*	 Purchase Button   
+/*------------------------------------------*/
+
+.navbar-nav > li > a#purchase {
+	color: #fff;
+	background-color: #333;
+	line-height: 36px;
+	-webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+	margin-top: 12px;
+}
+
+/*------------------------------------------*/
+/*	 Navbar Scroll   
+/*------------------------------------------*/
+
+.scroll-fixed-navbar {
+	padding: 0px;
+	background-color: #333;
+}
+
+.scroll-fixed-navbar .navbar-nav > li > a,
+.scroll-fixed-navbar .navbar-brand .black-color { 
+		color: #fff;
+}
+
+.scroll-fixed-navbar .navbar-nav > li > a#purchase { 
+	background-color: #eb5840;
+}
+
+/*------------------------------------------*/
+/*	 Menu Hover
+/*------------------------------------------*/
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a.selected-nav {
+	color: #fff;
+    background-color: transparent;
+}
+
+.scroll-fixed-navbar .navbar-nav > li > a:hover, 
+.scroll-fixed-navbar .navbar-nav > li > a.selected-nav {
+	color: #eb5840;
+}
+
+/*------------------------------------------*/
+/*	 Responsive Menu    
+/*------------------------------------------*/
+
+.navbar-toggle {
+    position: relative;
+    float: right;
+	background-color: none;
+    padding: 10px;
+	margin: 13px 30px 13px 0;
+	border: none;
+	color: #fff;
+	border: 2px solid #fff;
+}
+
+.navbar-toggle .icon-bar {
+	background-color: #fff;
+}
+
+
+@media only screen and (max-width: 767px){ 
+
+	.navbar-nav > li > a.selected-nav { 
+		color: #eb5840; 
+	}
+	
+	.navbar-nav > li > a#purchase { 
+		background-color: #eb5840; 
+		margin-top: 0; 
+		-webkit-border-radius: 0; 
+		-moz-border-radius: 0; 
+		border-radius: 0; 
+	}
+
+}
+
+
+
+/* ==========================================================================
+   03. INTRO
+   ========================================================================== */
+
+#intro {
+	background-image: url(/quickDuelSite/img/bg/clouds.png); /* Select the background pattern "pattern.png" , "pattern1.png" or "pattern2.png" */
+	background-repeat: repeat;
+	background-position: 0 0;
+	background-color: #eb5840;	
+	padding-top: 60px;
+	overflow: hidden;
+}
+
+/*------------------------------------------*/
+/*	  Intro Description
+/*------------------------------------------*/
+
+#intro_description {
+	margin-top: 160px;
+	color: #fff;
+}
+
+#intro_description h1 {
+	font-size: 400%;
+	line-height: 60px;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+#intro_description p {
+	font-size: 20px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	margin-bottom: 30px;
+}
+
+/*------------------------------------------*/
+/*	 Intro Buttons
+/*------------------------------------------*/
+
+#intro_description a {
+	margin-right: 10px;
+}
+
+/*------------------------------------------*/
+/*	  Intro Image
+/*------------------------------------------*/
+
+#intro_image .img-responsive { 
+	display: inline-block; 
+	margin-top: 50px;
+}
+
+/* ==========================================================================
+   11. NEWSLETTER  
+   ========================================================================== */
+
+#newsletter {
+	border-top: 1px solid #333;
+	border-bottom: 1px solid #333;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	color: #333;
+} 
+
+/*------------------------------------------*/
+/*	  Newsletter Title
+/*------------------------------------------*/
+
+#newsletter_title h1 {
+	font-weight: 400;
+}
+
+#newsletter_title p {
+	line-height: 24px;
+	font-size: 18px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	padding: 0 8%;
+}
+
+/*------------------------------------------*/
+/*	  Newsletter Form
+/*------------------------------------------*/
+
+.subscribe-form {
+	margin: 25px auto 14px;
+    position: relative;
+    z-index: 10;
+	width: 90%;
+}
+
+.subscribe-form input {
+	border: 1px solid #ddd;
+	border-right: none;	
+	width: 100%;
+}
+
+.subscribe-input {
+    width: 75%;
+    height: 54px;
+	color: #222;
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	padding-left: 10px;
+}
+
+.subscribe-submit {
+	width: 25%;
+	height: 54px;
+	position: absolute;
+    top: 0px;
+    right: 0px;
+	background-color: #333;
+	border: 1px solid #333;
+    color: #fff;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+    display: block;
+    cursor: pointer;
+    outline: 0;
+}
+
+.subscribe-submit:active {
+    outline: 0;
+}
+
+.subscribe-submit:hover {
+    opacity:0.9;
+}
+
+/*------------------------------------------*/
+/*	  Newsletter Form Error Message 
+/*------------------------------------------*/
+
+.error {
+	color: #fff;
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	padding: 5px;
+}
+
+
+
+/* ==========================================================================
+   12. CALL TO ACTION
+   ========================================================================== */
+
+#call_to_action {
+	padding-top: 70px;
+	padding-bottom: 80px;
+}
+
+#call_to_action .titlebar {
+	margin-bottom: 20px;
+}
+
+#call_to_action .titlebar p {
+	padding: 0 24%;
+}
+
+.stores a {
+	margin-right: 5px;
+}
+
+.stores a:last-child {
+	margin-right: 0;
+}
+
+
+/* ==========================================================================
+   13. FOOTER
+   ========================================================================== */
+
+#footer {
+	width: 100%;
+	background-color: #333;
+	padding-top: 20px;
+	padding-bottom: 20px
+}
+
+#footer p {
+	color: #999;
+	font-size: 13px;
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	margin-bottom: 0;	
+}
+
+/*------------------------------------------*/
+/*	 Footer Social Icons  
+/*------------------------------------------*/
+
+.footer-socials {
+	display: inline-block; 
+	padding-left: 0;
+	margin-bottom: 3px;
+}
+
+.footer-socials li {
+	float: left;
+	width: auto !important;
+    display: inline-block !important;
+    vertical-align: top;
+    clear: none !important;
+}
+
+.foo_social {
+    width: 40px;
+    height: 40px;
+	color: #777;
+	font-size: 18px;
+    line-height: 40px;
+	text-align: center;
+	margin: 0 5px;
+    display: block;
+    text-decoration: none;
+	-webkit-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	-ms-transition: all 250ms ease-in-out;
+	transition: all 250ms ease-in-out;
+}
+
+/*------------------------------------------*/
+/*	 Footer Icons Hover 
+/*------------------------------------------*/
+
+.ico-facebook:hover {color: #3b5998;}
+.ico-twitter:hover {color: #00a9ed;}
+.ico-google-plus:hover {color: #cd1111;}
+.ico-linkedin:hover {color: #015886;}
+.ico-dribbble:hover {color: #d92d84;}
+.ico-instagram:hover {color: #beb3a8;}
+.ico-pinterest:hover {color: #ac281a }
+.ico-dropbox:hover {color: #008ad2;}
+.ico-skype:hover  {color: #00a9ed; }
+.ico-youtube:hover {color: #cd1b20;}
+.ico-tumblr:hover {color: #3a5976;}
+.ico-vimeo:hover {color: #00adee;}
+.ico-flickr:hover {color: #d2d2d2 }
+.ico-github:hover {color: #222;}
+.ico-renren:hover {color: #364a83;}
+.ico-vk:hover {color: #3b5998;}
+.ico-xing:hover {color: #015f5e; }
+.ico-weibo:hover {color: #be4443;}
+.ico-rss:hover {color: #ff6600;}
+
+
+
+/* ==========================================================================
+   14. SCROLL TO TOP   
+   ========================================================================== */
+
+#scrollUp {
+	display: none;
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	background-image: url(../img/icons/back-to-top.png);
+	background-repeat: no-repeat;
+	background-position: 50% 48%;
+	background-color:rgba(123, 123, 123, 0.65);	
+	-webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+	-webkit-transition: all 250ms linear;
+	-moz-transition: all 250ms linear;
+	transition: all 250ms linear;	
+}
+
+#scrollUp:hover {
+	background-color: rgba(235, 88, 64, 0.95);
+}
+
+nav a#pull {  
+    display: none;  
+}
+
+
+
+
+/* ==========================================================================
+   STYLE CHANGER 
+   ========================================================================== */
+
+#stlChanger {
+	color:#cecece;
+	font-size: 14px;
+	overflow:hidden;
+	position:fixed;
+	top: 80px;
+	left:0;
+	z-index:1000000 ;
+}
+
+#stlChanger .siteChanger, 
+#stlChanger .bgChanger,
+ #stlChanger .buts {
+	position:relative;
+	overflow:hidden;
+}
+
+#stlChanger .siteChanger, 
+#stlChanger .bgChanger {
+	min-width: 220px;
+	min-height: 220px;
+}
+
+#stlChanger a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#stlChanger a:hover {text-decoration:none;}
+
+#stlChanger .blockChanger {
+	width: 170px;
+}
+
+#stlChanger .chBody {
+	background: #444;
+	width: 180px;
+	position: relative;
+	overflow: hidden;
+	border: 1px solid #222;
+	border-radius: 0 6px 6px 0;
+}
+
+#stlChanger .chBut {
+	background: #444;
+	width: 40px;
+	height: 40px;
+	position:absolute;
+	top: 15px;
+	right:0px;
+	z-index:10;
+	text-align: center;
+	border-radius: 0px 4px 4px 0px;
+}
+
+#stlChanger .chBut i {
+	color:#fff;
+	font-size: 28px;
+	margin: 6px;
+}
+
+#stlChanger .stBlock {
+	position:relative;
+	overflow:hidden;
+}
+
+#stlChanger .stBlock p {
+	color: #fff;
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 500;
+}
+
+#stlChanger h4 {
+	color: #444;
+	font-size: 18px;
+	background: #444;
+	font-weight: 900;
+	line-height: 22px;
+	display:block;
+	margin-top: 0;
+	padding: 8px 10px 9px;
+}
+
+#stlChanger .stBgs a  {
+	text-decoration:none;
+	width: 45px;
+	height: 45px;
+	float:left;
+	padding:0;
+	margin: 3px 3px 0 0;
+	cursor:pointer;
+	opacity: 1;
+}
+
+#stlChanger .stBgs a:hover {
+	opacity: 0.7;
+}
+
+#stlChanger a.dark-style {
+    display: inline-block;
+    padding: 6px 16px;
+    text-align: center;
+    background: none repeat scroll 0% 0% rgb(75, 76, 77);
+	font-size: 14px;
+	font-weight: 900;
+    color: #fff;
+    cursor: pointer;
+}
+
+#stlChanger a.dark-style:hover {
+    background: #ab2210;
+	color: #fff;
+}
+
+#stlChanger .btn-theme {
+	font-size: 14px;
+	font-weight: 700; 
+	text-transform: none;	
+	padding: 6px 10px;
+}
+
+/* Background Image Switcher
+----------------------------------*/
+#background-image {
+	width: 80%;
+	margin: 0 auto;
+	padding: 5px 0 10px;
+}
+
+#background-image p {
+	color: #fff;
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 500;
+}
+
+.colors {
+    margin: 0px 0px 30px;
+    overflow: hidden;
+}
+
+.colors li {
+    float: left;
+    margin: 3px 3px 0 0;
+}
+
+.colors li a {
+    display: block;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+}
+
+.bg1 { background-image: url(../quickDuelSite/img/bg/clouds.png);}
+/*.bg2 { background-image: url(../img/bg/square.png);}
+.bg3 { background-image: url(../img/bg/triangle.png);}*/
+
+#reset {
+	text-align: center;
+	margin-bottom: 35px;
+}
+
+#reset a:hover {
+	color: #f8f8f8;
+}
+
